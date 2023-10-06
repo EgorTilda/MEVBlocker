@@ -1,0 +1,125 @@
+{
+    "header": {
+        "getProtected": "Get Protected"
+    },
+    "intro": {
+        "heading": "99,9% Protection from MEV",
+        "text": "Tired of manipulative transaction tactics haunting your trades? We're here to solve that! Introducing our anti-MEV service – specifically designed for Crypto DEX Traders like you.",
+        "btn": "Make Yourself Protected",
+        "link": "learn More"
+    },
+    "service": {
+        "text": "“Using Anti-MEV Service, I’ve won the battle against MEV exploiters. It’s like having a secret weapon to protect my trades — I can’t imagine trading without it now.”",
+        "title1": "Join the Revolution Against MEV",
+        "title2": "Safeguard Your Assets from the Unseen Enemy",
+        "content1": "No more losing out to unscrupulous traders exploiting your hard work. Get on board with the movement to level the playing Deld and make DEX trading safe for everyone.",
+        "content2": "Our advanced algorithms work tirelessly to identify and prevent transaction manipulation, ensuring a fair and transparent trading environment."
+    },
+    "defense": {
+        "heading": "Broad spectrum MEV defense",
+        "text": "MEV bots have extracted more than $1.9 billion from well-meaning Ethereum users across a variety of use cases (trading, providing liquidity, minting NFTs, etc). Anti MEV is an RPC endpoint that supports these users by offering:",
+        "content1": "Full protection from frontrunning and sandwich attacks on all types of transactions",
+        "content2": "Easily implemented into your existing trading experience",
+        "content3": "Catering specifically to the fiercely competitive crypto trading space"
+    },
+    "sub": {
+        "heading": "Subcription",
+        "btn": "Start",
+        "freeTitle": "Free Trial",
+        "freeText": "You can Use Anti MEV for free for a month",
+        "activeTitle": "Active",
+        "activeLi1": "Unlimited № of trades",
+        "activeLi2": "Up 5 trading Addresses",
+        "activePeriod": "/monthly",
+        "popularTitle": "Popular",
+        "popularLi1": "Unlimited № of trades",
+        "popularLi2": "Up 10 trading Addresses",
+        "popularPeriod": "/annualy"
+    },
+    "protect": {
+        "heading": "Get Protected",
+        "text": "Add this RPC endpoint to your wallet to enjoy the full benefits of Anti MEV",
+        "title1": "Click to add to your client",
+        "text1": "Anti MEV (Ethereum Mainnet)",
+        "btn": "Add to Wallet",
+        "title2": "Add RPC Manually",
+        "link": "Having trouble? Check your wallet's documentationfor instructions on how to update your RPC endpoint"
+    },
+    "about": {
+        "heading": "About",
+        "text": "We have been trading on DEX for a long time and when MEV bots became a problem for our trades we started to create an Anti MEV RPC specifically for our trading team, and yes there are other RPCs that block MEV bots, we tested them all and none of them worked correctly. In June 2023 we realized we needed to make this a public product and since then over 150 active traders have been using our product.",
+        "author": "CEO, co-founder Oliver Mckinsey"
+    },
+    "partners": {
+        "heading": "Our Partners"
+    },
+    "share": {
+        "heading": "Don't let your friends get burned by MEV",
+        "btn": "Share Anti MEV"
+    },
+    "q0": {
+        "question": "What is MEV?",
+        "answer": "test"
+    },
+    "q1": {
+        "question": "What is an RPC endpoint?",
+        "answer": "test"
+    }, 
+    "q2": {
+        "question": "What kinds of MEV does MEV Blocker protect from?",
+        "answer": "test"
+    },
+    "q3": {
+        "question": "How does Anti MEV RPC give you a rebate and when?",
+        "answer": "test"
+    },
+    "q4": {
+        "question": "When and where should Anti MEV be used?",
+        "answer": "test"
+    },
+    "q5": {
+        "question": "How do I install Anti MEV?",
+        "answer": "test"
+    },
+    "q6": {
+        "question": "How does Anti MEV work?",
+        "answer": "test"
+    },
+    "q7": {
+        "question": "Which block builders does Anti MEV submit to?",
+        "answer": "test"
+    },
+    "q8": {
+        "question": "Does this RPC offer revert protection?",
+        "answer": "test"
+    },
+    "q9": {
+        "question": "Does this RPC offer a secure & private RPC endpoint?",
+        "answer": "test"
+    },
+    "q10": {
+        "question": "While using Anti MEV RPC, is it safe to ignore slippage control??",
+        "answer": "test"
+    },
+    "q11": {
+        "question": "Who made Anti MEV?",
+        "answer": "test"
+    },
+    "q12": {
+        "question": "How do I participate as a searcher?",
+        "answer": "test"
+    }, 
+    "q13": {
+        "question": "How can I get in touch?",
+        "answer": "test"
+    },
+    "reviews": {
+        "heading": "What others are saying...",
+        "r0": "Anti MEV fixed my marriage",
+        "r1": "I was tired of getting rekt, so I started using Anti MEV",
+        "r2": "If I'd known about Anti MEV sooner, I could've had a lambo by now",
+        "r3": "Robots should work for me, not against me",
+        "r4": "Nobody's stolen my lunch money since I started using Anti MEV",
+        "r5": "I used Anti MEV and I instantly went up a tax bracket"
+    }
+}

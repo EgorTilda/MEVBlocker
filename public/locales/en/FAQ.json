@@ -1,0 +1,58 @@
+{
+   "q": {
+        "question": "What is MEV?",
+        "answer": "test"
+    },
+    "q1": {
+        "question": "What is an RPC endpoint?",
+        "answer": "test"
+    }, 
+    "q2": {
+        "question": "What kinds of MEV does MEV Blocker protect from?",
+        "answer": "test"
+    },
+    "q3": {
+        "question": "How does Anti MEV RPC give you a rebate and when?",
+        "answer": "test"
+    },
+    "q4": {
+        "question": "When and where should Anti MEV be used?",
+        "answer": "test"
+    },
+    "q5": {
+        "question": "How do I install Anti MEV?",
+        "answer": "test"
+    },
+    "q6": {
+        "question": "How does Anti MEV work?",
+        "answer": "test"
+    },
+    "q7": {
+        "question": "Which block builders does Anti MEV submit to?",
+        "answer": "test"
+    },
+    "q8": {
+        "question": "Does this RPC offer revert protection?",
+        "answer": "test"
+    },
+    "q9": {
+        "question": "Does this RPC offer a secure & private RPC endpoint?",
+        "answer": "test"
+    },
+    "q10": {
+        "question": "While using Anti MEV RPC, is it safe to ignore slippage control??",
+        "answer": "test"
+    },
+    "q11": {
+        "question": "Who made Anti MEV?",
+        "answer": "test"
+    },
+    "q12": {
+        "question": "How do I participate as a searcher?",
+        "answer": "test"
+    }, 
+    "q13": {
+        "question": "How can I get in touch?",
+        "answer": "test"
+    }
+}

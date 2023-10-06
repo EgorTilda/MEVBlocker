@@ -1,0 +1,21 @@
+.langSwitch:first-child {
+  
+    &::after {
+        content: '| ';
+        font-weight: 500;
+        display: inline-block;
+        color: $text-color;
+        margin: 0 4px;
+    }
+}
+.langSwitch:hover {
+  color: $white;
+  
+}
+
+.langSwitch {
+  text-transform: uppercase;
+  &--active {
+    color: $white;
+  }
+}

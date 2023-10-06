@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+html {
+    font-size: 100%;
+}
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: $text-color;
+    background: $primary-grad;
+}
+html, body {
+    overflow-x: hidden;
+}
+section {
+    margin-bottom: 10rem;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 7rem;
+    }
+    @media screen and (max-width: 576px) {
+        margin-bottom: 4rem;
+    }
+    @media screen and (max-width: 440px) {
+        margin-bottom: 2.5rem;
+    }
+}
+h1 {
+    font-size: 4.9rem;
+    @media screen and (max-width: 768px) {
+        font-size: 4rem;
+    }
+    @media screen and (max-width: 576px) {
+        font-size: 3rem;
+    }
+    @media screen and (max-width: 440px) {
+        font-size: 2.5rem;
+    }
+
+}
+h2 {
+    font-size: 4rem;
+    @media screen and (max-width: 768px) {
+        font-size: 3rem;
+    }
+    @media screen and (max-width: 576px) {
+        font-size: 2.5rem;
+    }
+}
+.heading {
+    color: $heading-color;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5rem;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 3rem;
+    }
+    @media screen and (max-width: 576px) {
+        margin-bottom: 2.5rem;
+    }
+    @media screen and (max-width: 440px) {
+        margin-bottom: 1.5rem;
+    }
+}
+.title {
+    font-size: 1.5rem;
+    color: #d9d5e1;
+    font-weight: 600;
+}
+.text {
+    color: $text-color;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.4;
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
+    }
+}
+section {
+    margin-bottom: 7.5rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    padding: 0 15px;
+    margin: 0 auto;
+    min-height: 100%;
+    @media screen and (min-width: 1440px) {
+        padding: 0;
+        max-width: 1320px;
+    }
+    @media screen and (max-width: 992px) {
+        max-width: 960px;
+    }
+    @media screen and (max-width: 768px) {
+        max-width: none;
+    }
+}
+
+.card-style {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.btn {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1rem 4rem;
+    color: $white;
+    border-radius: 1.75rem;
+    background: linear-gradient(89deg, #5b6cff 0%, #ca32ff 100%);
+    &--accent {
+        background: linear-gradient(90deg, #f09 0%, #f88ae0 100%);
+        padding: 1.12rem 4.7rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
+    }
+    @media screen and (max-width: 576px) {
+        font-size: .8rem;
+    }
+}
+
+.link {
+    font-size: 1.125rem;
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
+    }
+    @media screen and (max-width: 576px) {
+        font-size: .8rem;
+    }
+}
+
+.lang-select {
+    text-transform: uppercase;
+    color: $text-color;
+    transition: color .1s ease-in-out;
+    cursor: pointer;
+    &:focus {
+        outline: 0;
+    }
+    &:hover {
+        color: $white;
+    }
+
+    option {
+        background-color: $primary-grad;
+        color: $text-color;
+    }
+}

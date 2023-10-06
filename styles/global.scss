@@ -1,0 +1,20 @@
+// Base Styles
+@import './base/reset';
+@import './base/grid';
+@import './base/vars';
+@import './base/common';
+
+// Blocks Styles
+@import './blocks/header';
+@import './blocks/intro';
+@import './blocks/service';
+@import './blocks/defense';
+@import './blocks/sub';
+@import './blocks/protect';
+@import './blocks/about';
+@import './blocks/partners';
+@import './blocks/faq';
+@import './blocks/reviews';
+@import './blocks/share';
+@import './blocks/footer';
+@import './blocks/lang-switch';

@@ -1,0 +1,68 @@
+.service {
+    &__content {
+        max-width: 52rem;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.9rem;
+        font-weight: 700;
+        margin-bottom: 6.7rem;
+        @media screen and (max-width: 768px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 360px) {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__cards {
+        justify-content: center;
+        column-gap: 9rem;
+        @media screen and (max-width: 768px) {
+            column-gap: 10%;
+        }
+        @media screen and (max-width: 440px) {
+            flex-direction: column;
+        }
+    }
+
+    &-card {
+        max-width: 26rem;
+        border-radius: 1.75rem;
+        padding: 1.7rem 1.12rem;
+        margin-bottom: 1rem;
+        @media screen and (max-width: 576px) {
+            width: 100%;
+        }
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            row-gap: 1.7rem;
+            @media screen and (max-width: 576px) {
+                width: 100%;
+            }
+        }
+    
+        &__title {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            @media screen and (max-width: 768px) {
+                font-size: 1rem;
+            }
+        }
+        
+    
+        &__text {
+            color: $text-color;
+            font-size: 1.25rem;
+            font-weight: 500;
+            @media screen and (max-width: 768px) {
+                font-size: .8rem;
+            }
+            @media screen and (max-width: 576px) {
+                font-size: .8rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.grid-row {
+    display: flex;
+    // @media screen and (max-width: 576px) {
+    //     & {
+    //         flex-direction: column;
+    //     }
+    // }
+}
+
+.grid-col-2 {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+}
+.grid-col-3 {
+    flex-basis: 33.3%;
+}
+.grid-col-4 {
+    flex-basis: 25%;
+}
+.grid-col-5 {
+    flex-basis: 20%;
+}

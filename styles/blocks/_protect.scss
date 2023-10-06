@@ -1,0 +1,92 @@
+.protect {
+    &__content {
+        margin-bottom: 5rem;
+    }
+    &__link {
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+    &__row {
+        column-gap: 6rem;
+        justify-content: center;
+        margin-bottom: 3rem;
+        @media screen and (max-width: 992px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__link {
+        display: block;
+        color: $text-color;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+.protect-card {
+    max-width: 34rem;
+    padding: 2.2rem 1.5rem;
+    border-radius: 2rem;
+    @media screen and (max-width: 992px) {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        margin-bottom: 2.75rem;
+        color: $card-text-color;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    &__text {
+        margin-bottom: 1.75rem;
+        color: $card-text-color;
+        text-align: center;
+        font-size: 1.12rem;
+        font-weight: 500;
+    }
+    &__data {
+        width: 100%;
+        table,
+        tbody {
+            display: block;
+            width: 100%;
+        }
+        tr {
+            display: flex;
+            width: 100%;
+            margin-bottom: 0.8rem;
+        }
+        th,
+        td {
+            display: inline-block;
+            width: 50%;
+        }
+        th {
+            text-align: left;
+            color: #7b7794;
+            font-weight: 500;
+        }
+        td {
+            text-align: left;
+            color: $card-text-color;
+            font-weight: 700;
+        }
+    }
+
+    &--btn {
+        min-width: 100px;
+        padding: 2.6rem 7rem;
+        white-space: nowrap;
+        text-align: center;
+        @media screen and (max-width: 576px) {
+            padding: 2rem 4rem;
+        }
+    }
+
+}

@@ -1,0 +1,31 @@
+.defense {
+    &__text {
+        margin-bottom: 4.75rem;
+    }
+}
+
+.defense-card {
+    padding: 2.4rem 4.5rem;
+    border-radius: 1.75rem;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+
+        p {
+            max-width: 18rem;
+            width: 33.3%;
+        }
+        @media screen and (max-width: 992px) {
+            flex-direction: column;
+            p {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+    @media screen and (max-width: 992px) {
+            padding: 2rem 3rem;
+    }
+}
+

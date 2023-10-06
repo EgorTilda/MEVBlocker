@@ -1,0 +1,93 @@
+.intro {
+    min-height: 100vh;
+    position: relative;
+    background-image: url("/img/cover-over.png");
+    background-position: center 9.5rem;
+    background-repeat: no-repeat;
+    padding-top: 21.5rem;
+    padding-bottom: 5.4rem;
+    @media screen and (max-width: 768px) {
+        background-size: 80%;
+    }
+    @media screen and (max-width: 440px) {
+        padding-top: 18rem;
+        padding-bottom: 2rem;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        background: linear-gradient(180deg, #0e0b23 0%, #0a0813 100%);
+        z-index: -2;
+    }
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20%;
+        left: calc(50% - 10rem);
+        z-index: -1;
+        width: 22rem;
+        height: 13.4rem;
+        flex-shrink: 0;
+        border-radius: 100%;
+        background: #ff00c7;
+        filter: blur(100px);
+    }
+    &__content {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__heading {
+        max-width: 67rem;
+        font-weight: 700;
+        background: linear-gradient(87deg, #e5eac7 22.34%, #d90ecf 79.14%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 1.7rem;
+    }
+    &__text-content {
+        max-width: 37rem;
+        color: #bab2ca;
+        font-size: 1.25rem;
+        font-weight: 500;
+        letter-spacing: -0.025rem;
+        text-align: center;
+        margin-bottom: 3.25rem;
+        line-height: 1.2;
+        @media screen and (max-width: 768px) {
+            font-size: 1rem;
+        }
+    }
+
+    &__cta-btn {
+        padding: 1.12rem 1.5rem;
+        background: $accent-grad;
+        border-radius: 1.75rem;
+        color: $white;
+        font-weight: 700;
+        margin-bottom: 2.25rem;
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+
+    &__link {
+        color: #907f8f;
+        font-weight: 600;
+        &::after {
+            content: url("/icons/arrow-down.svg");
+            display: inline-block;
+            margin-left: 8px;
+        }
+    }
+}
