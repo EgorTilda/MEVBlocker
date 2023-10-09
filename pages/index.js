@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Header from './../components/Header';
 import Footer from './../components/Footer';
 import ReviewItem from '../components/ReviewItem';
@@ -11,6 +12,12 @@ const Index = () => {
     const {t} = useTranslation('common', 'FAQ');
     return (
         <>
+            <Head>
+                <title>MEV Blocker</title>
+                <meta name="description" content="99,9% Protection from MEV" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <Header />
             <main className="main">
                 <section className="intro">
