@@ -73,19 +73,17 @@ const Index = () => {
                                             {t('defense.text')}
                                         </p>
                                     </div>
-                                    <div className="defense-card card-style">
-                                        <div className="defense-card__content text grid-row">
-                                            <p>
-                                                {t('defense.content1')}
-                                            </p>
-                                            <p>
-                                                {t('defense.content2')}
-                                            </p>
-                                            <p>
-                                                {t('defense.content3')}
-                                            </p>
-                                        </div>
-                                    </div>
+                                </div>
+                                <div className="defense__card">
+                                    <p className="defense__card-item">
+                                       {t('defense.content1')}
+                                    </p>
+                                    <p className="defense__card-item">
+                                        {t('defense.content2')}
+                                    </p>
+                                    <p className="defense__card-item">
+                                        {t('defense.content3')}
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -114,7 +112,7 @@ const Index = () => {
                                             <span className="sub-card__cost-value">$40</span>
                                             {t('sub.activePeriod')}
                                         </div>
-                                        <a href="#" className="sub-card__btn">{t('sub.btn')}</a>
+                                        <a href="https://anti-mev.net/" target="_blank" className="sub-card__btn">{t('sub.btn')}</a>
                                     </div>
                                 </div>
                             </div>
@@ -130,7 +128,7 @@ const Index = () => {
                                             <span className="sub-card__cost-value">$400</span>
                                             {t('sub.popularPeriod')}
                                         </div>
-                                        <a href="#" className="sub-card__btn">{t('sub.btn')}</a>
+                                        <a href="https://anti-mev.net/" target="_blank" className="sub-card__btn">{t('sub.btn')}</a>
                                     </div>
                                 </div>
                             </div>
@@ -156,7 +154,7 @@ const Index = () => {
                                             {t("protect.text1")}
                                         </p>
                                     </div>
-                                    <a href="#" className="protect-card__btn btn btn--accent">{t("protect.btn")}</a>
+                                    <a href="https://anti-mev.net/" target="_blank" className="protect-card__btn btn btn--accent">{t("protect.btn")}</a>
                                 </div>
                             </div>
                             <div className="protect-card card-style grid-col-2">
@@ -278,7 +276,7 @@ const Index = () => {
                     <div className="container">
                             <div className="share__content">
                                 <h2 className="share__heading heading">{t('share.heading')}</h2>
-                                <a href="#" className="share__btn btn">{t('share.btn')}</a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share" target="_blank" className="share__btn btn">{t('share.btn')}</a>
                             </div>
                     </div>
                 </section> 

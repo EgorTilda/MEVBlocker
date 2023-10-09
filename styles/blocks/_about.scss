@@ -16,10 +16,9 @@
             margin-bottom: 1rem;
         }
         @media screen and (max-width: 768px) {
+            max-width: 100%;
             font-size: 1rem;
-        }
-        @media screen and (max-width: 576px) {
-            font-size: 1rem;
+            font-weight: 400;
         }
     }
 }

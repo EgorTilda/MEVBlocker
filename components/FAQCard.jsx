@@ -5,7 +5,7 @@ const FAQCard = ({questionText, answerText}) => {
     const openAnswer = () => {
         setOpen(!isOpened);
     }
-    let faqClasses = "faq-card" + " " + (isOpened ? null : "faq-card--active")
+    let faqClasses = "faq-card" + " " + (isOpened ? "" : "faq-card--active")
     return (
         <div className={faqClasses}>
             <div onClick={openAnswer} className="faq-card__question">

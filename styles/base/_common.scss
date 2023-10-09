@@ -10,6 +10,7 @@ body {
 }
 html, body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 section {
     margin-bottom: 10rem;
@@ -116,10 +117,7 @@ section {
     }
 
     @media screen and (max-width: 768px) {
-        font-size: 1rem;
-    }
-    @media screen and (max-width: 576px) {
-        font-size: .8rem;
+        font-size: 1.2rem;
     }
 }
 

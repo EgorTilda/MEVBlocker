@@ -6,6 +6,10 @@
         flex-wrap: wrap;
         margin: 0 auto;
         gap: 1rem;
+
+        @media screen and (max-width: 354px) {
+            flex-direction: column;
+        }
     }
 }
 
@@ -15,9 +19,20 @@
     border-radius: 1.75rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(255, 255, 255, 0.03);
+
+    &__inner {
+        width: 100%;
+        text-align: center;
+    }
     
     @media screen and (max-width: 768px) {
         padding: 1.2rem 2.5rem;
+    }
+    @media screen and (max-width: 354px) {
+        display: block;
+        max-width: 80%;
+        width: 80%;
+        margin: 0 auto;
     }
     @media screen and (max-width: 576px) {
         padding: 1rem 2rem;
@@ -35,9 +50,7 @@
         @media screen and (max-width: 768px) {
             font-size: 1rem;
         }
-        @media screen and (max-width: 576px) {
-            font-size: .8rem;
-        }
+        
         cursor: pointer;
     }
 }
