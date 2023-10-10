@@ -1,5 +1,4 @@
 .intro {
-    min-height: 100vh;
     position: relative;
     background-image: url("/img/cover-over.png");
     background-position: center 9.5rem;
@@ -7,11 +6,18 @@
     padding-top: 21.5rem;
     padding-bottom: 5.4rem;
     @media screen and (max-width: 768px) {
-        background-size: 80%;
+        background-size: 70%;
     }
     @media screen and (max-width: 440px) {
-        padding-top: 18rem;
+        padding-top: 15rem;
         padding-bottom: 2rem;
+    }
+    @media screen and (max-width: 440px) {
+        padding-top: 20rem;
+    }
+    @media screen and (max-width: 320px) {
+        padding-top: 16rem;
+        padding-bottom: 2.4rem;
     }
     &::after {
         content: "";
@@ -37,6 +43,10 @@
         border-radius: 100%;
         background: #ff00c7;
         filter: blur(100px);
+        @media screen and (max-width: 576px) {
+            max-width: 220px;
+            max-height: 110px;
+        }
     }
     &__content {
         width: 100%;
@@ -53,7 +63,19 @@
         background: linear-gradient(87deg, #e5eac7 22.34%, #d90ecf 79.14%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        min-width: 100%;
         margin-bottom: 1.7rem;
+        @media screen and (max-width: 440px) {
+            font-size: 2.6rem;
+            line-height: 1;
+            margin-bottom: 2rem;
+        }
+        @media screen and (max-width: 375px) {
+            font-size: 2.2rem;
+        }
+        @media screen and (max-width: 320px) {
+            font-size: 2rem;
+        }
     }
     &__text-content {
         max-width: 37rem;
@@ -66,6 +88,10 @@
         line-height: 1.2;
         @media screen and (max-width: 768px) {
             font-size: 1rem;
+        }
+        @media screen and (max-width: 440px) {
+            font-size: .8rem;
+            margin-bottom: 2rem;
         }
     }
 
@@ -84,6 +110,9 @@
     &__link {
         color: #907f8f;
         font-weight: 600;
+        &::first-letter {
+            text-transform: uppercase;
+        }
         &::after {
             content: url("/icons/arrow-down.svg");
             display: inline-block;

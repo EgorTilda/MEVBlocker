@@ -45,6 +45,9 @@ h2 {
     @media screen and (max-width: 576px) {
         font-size: 2.5rem;
     }
+    @media screen and (max-width: 320px) {
+        font-size: 2rem;
+    }
 }
 .heading {
     color: $heading-color;
@@ -78,6 +81,9 @@ h2 {
 }
 section {
     margin-bottom: 7.5rem;
+    @media screen and (max-width: 425px) {
+        margin-bottom: 4.5rem;
+    }
 }
 
 .container {

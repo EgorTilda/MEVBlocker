@@ -1,6 +1,17 @@
 .defense {
     &__text {
         margin-bottom: 4.75rem;
+
+        @media screen and (max-width: 768px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 425px) {
+            max-width: 100%;
+            width: 100%;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 3rem;
+        }
     }
 }
 
@@ -23,9 +34,11 @@
 
     @media screen and (max-width: 992px) {
         flex-direction: column;
+        background-color: transparent;
+        padding: 0;
+        border: 0;
     }
     @media screen and (max-width: 768px) {
-        padding: 2rem;
         font-size: 1rem;
     }
 }
@@ -38,8 +51,13 @@
     @media screen and (max-width: 992px) {
         max-width: 100%;
         width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1.75rem;
+        background-color: rgba(255, 255, 255, 0.03);
+        padding: 1.5rem 2rem;
+
         &:not(:last-child) {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
     }
 }
