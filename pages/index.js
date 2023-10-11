@@ -152,50 +152,50 @@ const Index = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="protect__row grid-row">
-                            <div className="protect-card protect-card--btn card-style grid-col-2">
-                                <div className="protect-card__inner">
-                                    <h3 className="protect-card__title">{t("protect.title1")}</h3>
-                                    <div className="protect-card__text">
-                                        <p>
-                                            {t("protect.text1")}
-                                        </p>
+                        
+                        <div className="protect__row">
+                            <div className="protect-card protect-card--btn">
+                                <div className="protect-card__content">
+                                    <h3 className="protect-card__title">Click to add to your client</h3>
+                                    <div className="protect-card__cta">
+                                        <p className="protect-card__text">MEV Blocker (Ethereum Mainnet)</p>
+                                        <a className='protect-card__btn'>Add to Wallet</a>
                                     </div>
-                                    <a href="https://anti-mev.net/" target="_blank" className="protect-card__btn btn btn--accent">{t("protect.btn")}</a>
                                 </div>
                             </div>
-                            <div className="protect-card card-style grid-col-2">
-                                <div className="protect-card__inner">
-                                    <h3 className="protect-card__title">{t("protect.title2")}</h3>
+                            <div className="protect-card protect-card--table">
+                                <div className="protect-card__content">
+                                    <h3 className="protect-card__title">Add RPC Manually</h3>
                                     <div className="protect-card__data">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <th>Network Name</th>
-                                                    <td>Ethereum Mainnet (Anti MEV)</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>New RPC URL</th>
-                                                    <td><a>https://rpc.anti-mev.net/</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Chain ID</th>
-                                                    <td>1</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Currency Symbol</th>
-                                                    <td>ETH</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Block Explorer URL</th>
-                                                    <td><a>https://etherscan.io</a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Network Name</th>
+                                                        <td>Ethereum Mainnet (Anti MEV)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>New RPC URL</th>
+                                                        <td>https://rpc.anti-mev.net/</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Chain ID</th>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Currency Symbol</th>
+                                                        <td>ETH</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Block Explorer URL</th>
+                                                        <td>https://etherscan.io</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <a href="#" className="protect__link">
                             {t("protect.link")}
                         </a>
@@ -272,9 +272,9 @@ const Index = () => {
                         <h2 className="reviews__heading heading">{t('reviews.heading')}</h2>
                         <div className="reviews__content">
                             <div className="grid-row">
-                            {Object.keys(revData).map((elem, index) => (
-                                <ReviewItem text={t(`reviews.r${index}`)} />
-                            ))}
+                                {Object.keys(revData).map((elem, index) => (
+                                    <ReviewItem text={t(`reviews.r${index}`)} mode={index % 2 == 0 ? "review-card--right" : ""}/>
+                                ))}
                             </div>
                         </div>
                     </div>

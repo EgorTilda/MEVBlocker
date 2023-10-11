@@ -644,7 +644,7 @@ section {
   -moz-column-gap: 5.2%;
        column-gap: 5.2%;
 }
-@media screen and (max-width: 876px) {
+@media screen and (max-width: 768px) {
   .sub__row {
     flex-direction: column;
     justify-content: center;
@@ -653,21 +653,16 @@ section {
 }
 
 .sub-card {
-  max-width: 16.75rem;
+  max-width: 18.75rem;
   width: 33.3%;
   padding: 2rem;
   border-radius: 2rem;
 }
-@media screen and (max-width: 876px) {
-  .sub-card {
-    max-width: 60%;
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-}
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .sub-card {
     max-width: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
 .sub-card__title {
@@ -762,26 +757,14 @@ section {
   max-width: 30rem;
   margin: 0 auto;
 }
-.protect__row {
-  -moz-column-gap: 6rem;
-       column-gap: 6rem;
-  justify-content: center;
-  margin-bottom: 3rem;
-}
-@media screen and (max-width: 992px) {
-  .protect__row {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 .protect__link {
   display: block;
   color: #BAB2CA;
   text-align: center;
   font-size: 1.25rem;
   font-weight: 400;
-  text-align: center;
   line-height: 1.4;
+  max-width: 45rem;
 }
 @media screen and (max-width: 768px) {
   .protect__link {
@@ -789,26 +772,70 @@ section {
   }
 }
 
-.protect-card {
-  padding: 2.4rem 0;
-  border-radius: 2rem;
+.protect__row {
+  display: flex;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+}
+@media screen and (min-width: 992px) {
+  .protect__row {
+    justify-content: center;
+    -moz-column-gap: 6rem;
+         column-gap: 6rem;
+  }
 }
 
-.protect-card__inner {
+.protect-card {
+  width: 50%;
+  max-width: 30rem;
+  padding: 2rem 0;
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  justify-content: center;
+}
+
+.protect-card__content {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 3rem;
 }
 
 .protect-card__title {
   color: #D9D5E1;
-  text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+
+.protect-card__text {
+  color: #D9D5E1;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1.7rem;
+}
+
+.protect-card__cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .protect-card__btn {
-  border-radius: 1.2rem;
+  width: 100%;
+  padding: 1rem 0;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  border-radius: 1rem;
+  background: linear-gradient(90deg, #F09 0%, #F88AE0 100%);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

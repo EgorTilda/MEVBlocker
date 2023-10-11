@@ -18,14 +18,14 @@ const Header = () => {
                         <nav className="header-nav">
                             <a href="#protect-block" className="header-nav__link cta-link">{t('header.getProtected')}</a>
                             <a href="#faq-block" className="header-nav__link faq-link">FAQ</a>
-                            <div className="switch">
-                                {locales.map(l => (
-                                    <button className="langSwitch" key={l} onClick={handleClick(l)}>
-                                        {l}
-                                    </button>
-                                ))}
-                            </div>
                         </nav>
+                        <div className="switch">
+                            {locales.map(l => (
+                                <button className="langSwitch" key={l} onClick={handleClick(l)}>
+                                    {l}
+                                </button>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </header>

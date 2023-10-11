@@ -6,47 +6,167 @@
         max-width: 30rem;
         margin: 0 auto;
     }
-    &__row {
-        column-gap: 6rem;
-        justify-content: center;
-        margin-bottom: 3rem;
-        @media screen and (max-width: 992px) {
-            flex-direction: column;
-            align-items: center;
-        }
-    }
     &__link {
         display: block;
         color: $text-color;
         text-align: center;
         font-size: 1.25rem;
         font-weight: 400;
-        text-align: center;
         line-height: 1.4;
+        max-width: 45rem;
         @media screen and (max-width: 768px) {
-            font-size: .8rem;
+            font-size: 0.8rem;
         }
     }
 }
 
-.protect-card {
-    padding: 2.4rem 0;
-    border-radius: 2rem;
+.protect__row {
+    display: flex;
+    margin-bottom: 3rem;
+    justify-content: space-between;
+
+    @media screen and (min-width: 992px) {
+        justify-content: center;
+        column-gap: 6rem;
+    }
+    @media screen and (max-width: 991px) {
+        flex-direction: column;
+    }
 }
 
-.protect-card__inner {
+.protect-card {
+    width: 50%;
+    max-width: 30rem;
+    padding: 2rem 10px;
+
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.03);
+
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 991px) {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+.protect-card--btn {
+    padding: 2rem 1rem;
+}
+
+.protect-card__content {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.protect-card--btn .protect-card__content {
+    justify-content: space-between;
+    row-gap: 3rem;
 }
 
 .protect-card__title {
     color: $card-text-color;
-    text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+
+.protect-card__text {
+    color: #D9D5E1;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 1.7rem;
+}
+
+.protect-card__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .protect-card__btn {
-    border-radius: 1.2rem;
+    width: 100%;
+    padding: 1rem 0;
+    color: $white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+
+    border-radius: 1rem;
+    background: $accent-grad;
+
+    cursor: pointer;
+}
+
+.protect-card__data {
+    width: 100%;
+    table,
+    tbody {
+        display: block;
+        width: 100%;
+    }
+    tr {
+        display: flex;
+        width: 100%;
+        margin-bottom: 0.8rem;
+    }
+    th,
+    td {
+        display: inline-block;
+        width: 50%;
+    }
+    th {
+        text-align: left;
+        color: #7b7794;
+        font-weight: 500;
+    }
+    td {
+        text-align: left;
+        color: $card-text-color;
+        font-weight: 700;
+    }
+    @media screen and (max-width: 375px) {
+        tr {
+            display: flex;
+            flex-direction: column;
+
+        }
+        th {
+            margin-bottom: 5px;
+        }
+        th, td {
+            width: 100%;
+        }
+    }
+}
+
+.protect-card--table .protect-card__content {
+    width: 90%;
+    justify-content: baseline;
+    @media screen and (max-width: 991px) {
+        max-width: 60%;
+        width: 60%;
+    }
+    @media screen and (max-width: 576px) {
+        max-width: 90%;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.protect-card--btn .protect-card__content {
+    text-align: center;
+    @media screen and (max-width: 991px) {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.protect-card--table .protect-card__title {
+    margin-bottom: 1rem;
 }
