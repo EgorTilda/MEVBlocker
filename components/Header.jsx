@@ -15,17 +15,17 @@ const Header = () => {
                         <a href="#" className="header__logo logo">
                             <img src="/img/logo.svg" alt="MEV Blocker"/>
                         </a>
-                        <nav className="header-nav">
-                            <a href="#protect-block" className="header-nav__link cta-link">{t('header.getProtected')}</a>
-                            <a href="#faq-block" className="header-nav__link faq-link">FAQ</a>
-                        </nav>
-                        <div className="switch">
-                            {locales.map(l => (
-                                <button className="langSwitch" key={l} onClick={handleClick(l)}>
-                                    {l}
-                                </button>
-                            ))}
-                        </div>
+                            <nav className="header-nav">
+                                <a href="#protect-block" className="header-nav__link cta-link">{t('header.getProtected')}</a>
+                                <a href="#faq-block" className="header-nav__link faq-link">FAQ</a>
+                            </nav>
+                            <div className="switch">
+                                {locales.map(l => (
+                                    <button className="langSwitch" key={l} onClick={handleClick(l)}>
+                                        {l}
+                                    </button>
+                                ))}
+                            </div>
                     </div>
                 </div>
             </header>

@@ -156,16 +156,16 @@ const Index = () => {
                         <div className="protect__row">
                             <div className="protect-card protect-card--btn">
                                 <div className="protect-card__content">
-                                    <h3 className="protect-card__title">Click to add to your client</h3>
+                                    <h3 className="protect-card__title">{t('protect.title1')}</h3>
                                     <div className="protect-card__cta">
-                                        <p className="protect-card__text">MEV Blocker (Ethereum Mainnet)</p>
-                                        <a className='protect-card__btn'>Add to Wallet</a>
+                                        <p className="protect-card__text">{t('protect.text1')}</p>
+                                        <a className='protect-card__btn'>{t('protect.btn')}</a>
                                     </div>
                                 </div>
                             </div>
                             <div className="protect-card protect-card--table">
                                 <div className="protect-card__content">
-                                    <h3 className="protect-card__title">Add RPC Manually</h3>
+                                    <h3 className="protect-card__title">{t('protect.title2')}</h3>
                                     <div className="protect-card__data">
                                             <table>
                                                 <tbody>

@@ -11,6 +11,11 @@
         row-gap: 3rem;
         justify-content: center;
     }
+    &__heading {
+        @media screen and (max-width: 425px) {
+            margin-bottom: 2rem;
+        }
+    }
 }
 
 .review-card {
@@ -84,9 +89,6 @@
     }
     &--right {
         transform: rotateZ(2.5deg);
-    }
-    &--left {
-        transform: rotateZ(-4.5deg);
     }
 
     &__author {

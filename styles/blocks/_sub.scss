@@ -1,7 +1,7 @@
 .sub {
     &__row {
         justify-content: center;
-        column-gap: 5.2%;
+        column-gap: 5%;
         @media screen and (max-width: 768px) {
             flex-direction: column;
             justify-content: center;
@@ -10,7 +10,7 @@
     }
 }
 .sub-card {
-    max-width: 18.75rem;
+    max-width: 19rem;
     width: 33.3%;
     padding: 2rem;
     border-radius: 2rem;
@@ -63,7 +63,7 @@
         font-weight: 500;
         font-weight: 500;
         margin-bottom: 2rem;
-        max-width: 80%;
+        transform: translateX(12%);
 
         li {
             list-style-type: disc;
@@ -73,8 +73,9 @@
         }
 
         @media screen and (max-width: 768px) {
-            transform: translateX(12%);
+            
             font-size: 1rem;
+            max-width: 80%;
         }
     }
     &__cost-value {
