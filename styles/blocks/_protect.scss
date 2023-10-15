@@ -10,13 +10,22 @@
         display: block;
         color: $text-color;
         text-align: center;
-        font-size: 1.25rem;
+        font-size: 1rem;
         font-weight: 400;
         line-height: 1.4;
         max-width: 45rem;
         @media screen and (max-width: 768px) {
             font-size: 0.8rem;
         }
+    }
+    &__text {
+        @media screen and (max-width: 320px) {
+            font-size: .9rem;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 2.75rem;
     }
 }
 
@@ -32,13 +41,15 @@
     @media screen and (max-width: 991px) {
         flex-direction: column;
     }
+    @media screen and (max-width: 768px) {
+        margin-bottom: 1.5rem;
+    }
 }
 
 .protect-card {
     width: 50%;
-    max-width: 30rem;
-    padding: 2rem 10px;
-
+    max-width: 32rem;
+    padding: 2.6rem 10px;
     border-radius: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(255, 255, 255, 0.03);
@@ -54,6 +65,9 @@
 }
 
 .protect-card--btn {
+    padding: 2.6rem 1rem;
+}
+.protect-card--table {
     padding: 2rem 1rem;
 }
 
@@ -63,7 +77,6 @@
     align-items: center;
 }
 .protect-card--btn .protect-card__content {
-    justify-content: space-between;
     row-gap: 3rem;
 }
 
@@ -80,7 +93,7 @@
     font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.2;
-    margin-bottom: 1.7rem;
+    margin-bottom: 1.75rem;
 }
 
 .protect-card__cta {
@@ -147,7 +160,7 @@
 }
 
 .protect-card--table .protect-card__content {
-    width: 90%;
+    width: 100%;
     justify-content: baseline;
     @media screen and (max-width: 991px) {
         max-width: 60%;

@@ -42,7 +42,7 @@ const Index = () => {
                             </p>
                         </div>
                         <div className="service__cards grid-row">
-                            <div className="grid-col-2">
+                            
                                 <div className="service-card card-style">
                                     <div className="service-card__inner">
                                         <div className="service-card__title">{t('service.title1')}</div>
@@ -53,10 +53,8 @@ const Index = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="grid-col-2">
+                            
                                 <div className="service-card card-style">
-
                                     <div className="service-card__inner">
                                         <div className="service-card__title">{t('service.title2')}</div>
                                         <div className="service-card__text">
@@ -66,7 +64,6 @@ const Index = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -196,7 +193,7 @@ const Index = () => {
                             </div>
                         </div>
 
-                        <a href="#" className="protect__link">
+                        <a href="https://anti-mev.net/" target="_blank" className="protect__link">
                             {t("protect.link")}
                         </a>
                     </div>

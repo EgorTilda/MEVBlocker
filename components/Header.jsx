@@ -15,6 +15,7 @@ const Header = () => {
                         <a href="#" className="header__logo logo">
                             <img src="/img/logo.svg" alt="MEV Blocker"/>
                         </a>
+                        <div className="header__right">
                             <nav className="header-nav">
                                 <a href="#protect-block" className="header-nav__link cta-link">{t('header.getProtected')}</a>
                                 <a href="#faq-block" className="header-nav__link faq-link">FAQ</a>
@@ -26,6 +27,10 @@ const Header = () => {
                                     </button>
                                 ))}
                             </div>
+                        </div>
+                            
+
+                            
                     </div>
                 </div>
             </header>
