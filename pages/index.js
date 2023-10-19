@@ -156,7 +156,7 @@ const Index = () => {
                                     <h3 className="protect-card__title">{t('protect.title1')}</h3>
                                     <div className="protect-card__cta">
                                         <p className="protect-card__text">{t('protect.text1')}</p>
-                                        <a className='protect-card__btn'>{t('protect.btn')}</a>
+                                        <a href="https://anti-mev.net/" target="_blank" className='protect-card__btn'>{t('protect.btn')}</a>
                                     </div>
                                 </div>
                             </div>
@@ -257,7 +257,7 @@ const Index = () => {
                             <div className="faq__content grid-row">
                                 <div className="faq-col">
                                     {Object.keys(FAQData).map((elem, index) => (
-                                            <FAQCard questionText={t(`q${index}.question`)} answerText={t(`q0.answer`)} />
+                                            <FAQCard questionText={t(`q${index}.question`)} answerText={t(`q${index}.answer`)} />
                                     ))}
                                 </div>
                             </div>

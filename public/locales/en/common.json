@@ -59,23 +59,23 @@
     },
     "q0": {
         "question": "What is MEV?",
-        "answer": "test"
+        "answer": "MEV or “maximal extractable value” is a method used by savvy actors (known as “searchers”) to exploit your transactions at your expense. Any time you make a transaction that carries value, searchers can “frontrun” it by submitting the exact same transaction before you and keeping the profits for themselves. After getting frontrun, you can also get “backrun”, which is where the searcher cleans up any price slippage your trade caused, again keeping the profits for themselves. Both a frontrun and a backrun together are known as a “sandwich attack” — the worst type of MEV. MEV gives you a worse price for your transactions and can cause you to lose out on hundreds or even thousands of dollars. Anti MEV is an easy solution - an RPC endpoint that protects all types of transactions from MEV."
     },
     "q1": {
         "question": "What is an RPC endpoint?",
-        "answer": "test"
+        "answer": "An RPC (remote procedure call) endpoint is used to connect applications like wallets to the blockchain. Anti MEV is a special RPC endpoint that ensures your trades are protected from MEV. It does this by sending your transaction to a network of searchers that scan for backrunning opportunities, but cannot frontrun or sandwich your trades. You can add RPC endpoints like Anti MEV by changing the selected network in your crypto wallet. Some DeFi trading apps will also be able to integrate the Anti MEV RPC endpoint directly — making it a default for all users. Get in touch if you're interested in doing this!"
     }, 
     "q2": {
         "question": "What kinds of MEV does MEV Blocker protect from?",
-        "answer": "test"
+        "answer": "Anti MEV protects from most kinds of frontrunning, but especially from trade sandwiching, which is when a searcher trades just before and just after your transaction to make a profit."
     },
     "q3": {
         "question": "How does Anti MEV RPC give you a rebate and when?",
-        "answer": "test"
+        "answer": "Anti MEV also lets you benefit from backrunning. It does this by allowing searchers to “bid” in an auction to win the right to backrun your trade. When this happens, users of Anti MEV receive 90% of the profit their backrunning opportunity creates (compared with 0% when not using Anti MEV).The rebate is paid to the user that sent the transaction (tx.origin), immediately in the same block. In return for benefitting from backrunning your trade, these searchers are not allowed to frontrun or sandwich you — thus protecting you from the worst types of MEV."
     },
     "q4": {
         "question": "When and where should Anti MEV be used?",
-        "answer": "test"
+        "answer": "You should use Anti MEV as often as possible! While some DEXs like CoW Swap offer MEV protection for your DeFi trades, most DeFi venues and NFT marketplaces do not provide any type of MEV protection. This is where Anti MEV comes in: any user or dApp can implement it and it protects all types of transactions from MEV.  See a chance to mint the next Cryptopunks but don't want anyone to snatch the opportunity from you? Use Anti MEV. Want to trade directly on an AMM that doesn't protect you from MEV? Use Anti MEV. And more!"
     },
     "q5": {
         "question": "How do I install Anti MEV?",
@@ -83,35 +83,35 @@
     },
     "q6": {
         "question": "How does Anti MEV work?",
-        "answer": "test"
+        "answer": "To use Anti MEV, you will need to add the Anti MEV RPC endpoint to your wallet. You can do that easily by following the instructions here. (Note that once your Anti MEV is added to your wallet, you might need to check that it is your selected network from time to time.) If your wallet does not support adding custom RPC endpoints, you may have to contact your wallet developer to get Anti MEV included as a supported RPC."
     },
     "q7": {
         "question": "Which block builders does Anti MEV submit to?",
-        "answer": "test"
+        "answer": "Anti MEV submits to all major block builders, including Builder0x69, bloXroute, Blocknative, Flashbots, rsync builder, Titan Builder, Eth Builder, Payload, Beaver Build etc"
     },
     "q8": {
         "question": "Does this RPC offer revert protection?",
-        "answer": "test"
+        "answer": "No, this RPC focuses on fast execution, however, we are offering another endpoint which offers revert protection. This separate endpoint focuses on providing revert protection first, at the expense of possibly slower inclusion time. You can use this second endpoint by using antimev.com/rpc2 as the url instead."
     },
     "q9": {
         "question": "Does this RPC offer a secure & private RPC endpoint?",
-        "answer": "test"
+        "answer": "Yes! if you want your transactions to be completely private, and you don´t care about the refund, you need to connect to the following endpoint: antimev.com/noreverts as the url instead. This endpoint focuses on privacy for users that want to perform transactions and it will not share TX data over WS. It prevents transactions failures (same as /noreverts). Note: This endpoint is intended for sophisticated users who can unstuck transaction themselves."
     },
     "q10": {
         "question": "While using Anti MEV RPC, is it safe to ignore slippage control??",
-        "answer": "test"
+        "answer": "NO, you should ALWAYS set slippage control to have multiple protections in place. Goal of RPC is to prevent 99% of sandwiches but no existing solution can provide full 100% protection. Due to reorgs/forked blocks 0.1% of transactions might become publicly available before on-chain confirmation."
     },
     "q11": {
         "question": "Who made Anti MEV?",
-        "answer": "test"
+        "answer": "Anti MEV is jointly formulated and maintained by CoW Protocol, Agnostic Relay, and Beaver Build. It is open to all searchers and block builders. This collaboration represents our commitment to providing a trusted, neutral product available to all Ethereum users. We invite additional contributors - please get in touch if you're interested in supporting the project."
     },
     "q12": {
         "question": "How do I participate as a searcher?",
-        "answer": "test"
+        "answer": "If you are a searcher that is interested in collaborating with Anti MEV RPC, please check out the documentation for searchers and join the community."
     }, 
     "q13": {
         "question": "How can I get in touch?",
-        "answer": "test"
+        "answer": "If you are a searcher or a dApp developer, or if you're a user that has questions about Anti MEV, please reach out via Telegram."
     },
     "reviews": {
         "heading": "What others are saying...",

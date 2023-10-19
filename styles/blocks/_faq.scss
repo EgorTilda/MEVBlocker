@@ -1,5 +1,7 @@
 .faq {
     &__content {
+        max-width: 800px;
+        margin: 0 auto;
         justify-content: center;
         column-gap: 2%;
         @media screen and (max-width: 1152px) {
@@ -10,6 +12,8 @@
 }
 .faq-col {
     max-width: 100%;
+    width: 100%;
+    align-items: center;
     flex-direction: column;
     flex-grow: 0;
     flex-shrink: 1;
@@ -72,13 +76,14 @@
         // overflow: hidden;
         // transition: max-height 0.1s ease-in-out;
         margin-bottom: 1rem;
+        line-height: 1.4;
     }
     // &--active &__answer {
     //     max-height: 8rem;
     // }
     &--active {
         min-height: 5rem;
-        max-height: 20rem;
+        max-height: 40rem;
     }
     &--active &__control {
         transform: rotateZ(45deg);
@@ -86,7 +91,7 @@
 
     @media screen and (max-width: 410px) {
         &__name, &__answer {
-            font-size: 1rem;
+            font-size: .8rem;
         }
         
     }

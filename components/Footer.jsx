@@ -12,8 +12,8 @@ const Footer = () => {
                             <a href="#" className="footer__nav-link footer__nav-link--title">
                             {t('supportTitle')}
                             </a>
-                            <a href="https://anti-mev.net/docs" className="footer__nav-link">{t('docs')}</a>
-                            <a href="https://anti-mev.net/#questions" className="footer__nav-link">{t('support')}</a>
+                            <a href="https://anti-mev.net/docs" target="_blank" className="footer__nav-link">{t('docs')}</a>
+                            <a href="https://anti-mev.net/#questions" target="_blank" className="footer__nav-link">{t('support')}</a>
                         </div>
                         </div>
                         <div className="grid-col-2">
@@ -21,8 +21,8 @@ const Footer = () => {
                             <a href="#" className="footer__nav-link footer__nav-link--title">
                                 {t('about')}
                             </a>
-                            <a href="https://anti-mev.net/privacy-policy" className="footer__nav-link">{t('privacy')}</a>
-                            <a href="https://anti-mev.net/cookie-policy" className="footer__nav-link">{t('cookie')}</a>
+                            <a href="https://anti-mev.net/privacy-policy" target="_blank" className="footer__nav-link">{t('privacy')}</a>
+                            <a href="https://anti-mev.net/cookie-policy" target="_blank" className="footer__nav-link">{t('cookie')}</a>
                         </div>
                         </div>
                     </nav>

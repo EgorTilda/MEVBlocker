@@ -1,7 +1,7 @@
 {
    "q": {
         "question": "What is MEV?",
-        "answer": "test"
+        "answer": "MEV or “maximal extractable value” is a method used by savvy actors (known as “searchers”) to exploit your transactions at your expense. Any time you make a transaction that carries value, searchers can “frontrun” it by submitting the exact same transaction before you and keeping the profits for themselves. After getting frontrun, you can also get “backrun”, which is where the searcher cleans up any price slippage your trade caused, again keeping the profits for themselves. Both a frontrun and a backrun together are known as a “sandwich attack” — the worst type of MEV.MEV gives you a worse price for your transactions and can cause you to lose out on hundreds or even thousands of dollars. Anti MEV is an easy solution - an RPC endpoint that protects all types of transactions from MEV."
     },
     "q1": {
         "question": "What is an RPC endpoint?",
